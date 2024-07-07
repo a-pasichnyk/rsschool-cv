@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2>ARTEM PASICHNYK</h2>
+        <ul>
+            <li><a href="https://discord.com/users/1252703929213653233"><img src="/images/discord.png" alt="discrod page" class="navicon" width="20px"></a></li>
+            <li><a href="https://github.com/a-pasichnyk"><img src="/images/github.png" alt="github page" class="navicon" width="20px"></a></li>
+            <li><a href="https://www.linkedin.com/in/a-pasichnyk/"><img src="/images/linkedin.png" alt="Linkedin page" class="navicon" width="20px"></a></li>
+        </ul>
+        <hr>
+    </nav>
+    <img src="/images/photo.png" alt="Profile photo" width="200px">
+</header>
+
+<main>
+    <section class="aboutmyself">
+        <h4>ABOUT MYSELF:</h4>
+        <p>I am 27 and currently I am working as an architect at <a href="https://apa.com.pl/o-nas/biuro/">APA Wojciechowski</a> (largest architectural firm in Poland with over 100 employees).</p>
+        <p>My goal is to learn web development and to be able to create web and cross platform applications. I decided to start with front-end development, because for me it’s very important to interract with visual part. Also I want to understand all aspects of development (front-end, back-end as well as design process in Figma).</p>
+        <p>Sense of style, artistic approach and ability to create different concepts in short deadlines are definitely my most valuable assets, which I earned working as an architectural designer.</p>
+        <hr>
+    </section>
+
+    <section class="skills">
+        <h4>PROGRAMING SKILLS:</h4>
+        <ul>
+            <li><strong>HTML, CSS, JavaScript</strong> - beginer</li>
+            <li><strong>GitHub</strong> - beginer</li>
+            <li><strong>Figma</strong> - beginer</li>
+            <li><strong>Photoshop</strong> - beginer</li>
+        </ul>
+        <hr>
+    </section>
+
+    <section class="code">
+        <h4>CODE EXAMPLES:</h4>
+        <p>I designed my first personal project for real client. This is a simple landing page for foreign language services, which I hosted on GitHub. Link down below:</p>          
+        <a href="https://a-pasichnyk.github.io/speakeng/">ENGLISH FOR IT website</a>
+        <br>
+        <p>Here are some code examples from this website:</p>
+        <blockquote>JavaScript code: 
+            <pre>
+                const dropDownComments = document.querySelector(".emptyCommentArea");
+                const dropBtn = document.getElementById("feedback-btn");
+                
+                
+                function dropDown() {
+                    dropDownComments.classList.toggle("filledCommentArea");
+                
+                    const hdnBtn = '<span class="redText">&lt;</span>Приховати<span class="redText">&gt;</span>';
+                    const showBtn = '<span class="redText">&lt;</span>Більше відгуків<span class="redText">&gt;</span>';
+                
+                    if (dropBtn.innerHTML === hdnBtn) {
+                        dropBtn.innerHTML = showBtn;
+                    } else {
+                        dropBtn.innerHTML = hdnBtn;
+                    }
+                }
+                
+                dropBtn.addEventListener("click", dropDown);
+            </pre>
+        </blockquote>
+
+        <blockquote>CSS code: 
+            <pre>
+                :root {
+                    --bgColor: #262B31;
+                    --bgColor2: #212428;
+                    --whiteText: #D5D5D5; 
+                    --yellowText: #F9C862; /*#F9C862*/
+                    --redText: #E15A61;
+                    --gray:#627281; /*#6C757D*/
+                    --darkGray: #6559b4; /*#4f5357*/ 
+                    --marginBetweenSections: 80px;
+                    --marginBetweenSectionsMobile: 30px;
+                    --dropShadow: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+                }
+            </pre>
+        </blockquote>
+        <hr>
+
+    </section>
+    
+
+    <section class="experience">
+        <h4>WORK EXPERIENCE:</h4>
+        <ul>
+            <li><strong>Architectural designer at <a href="https://apa.com.pl/o-nas/biuro/">APA Wojciechowski</a></strong> - since 2020</li>
+            <li><strong>Freelance  3D artist</strong> - 2019-2020</li>
+        </ul>
+        <hr>
+    </section>
+
+    <section class="education">
+        <h4>EDUCATION:</h4>
+        <ul>
+            <li><strong>Gdańsk University of Technology</strong> (Master of Architecture - 2020)</li>
+            <li><strong>Chernivtsi National University</strong> (Bachelor of Architecture - 2018)</li>
+        </ul>
+        <hr>
+    </section>
+
+    <section class="languages">
+        <h4>LANGUAGES:</h4>
+        <ul>
+            <li><strong>Ukrainian:</strong> native</li>
+            <li><strong>Polish:</strong> B2+/C1</li>
+            <li><strong>English:</strong> B1+</li>
+            <li><strong>Russian:</strong> C1</li>
+        </ul>
+        <hr>
+
+    </section>
+</main>
+
+<footer>
+    
+</footer>
+
+
+</body>
+</html>
