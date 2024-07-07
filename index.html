@@ -9,9 +9,8 @@
 <body>
 
 
-    
+
 <header class="container">
-    <!-- В раздел nav сознательно даю меню с ссылками на контакты, по структуре даная секция мало чем будет отличатся от нормальной навигации на какой либо веб-странице. Как по мне CV слишком компактное, что-бы делать #anchor-ссылки в шапке на соответсвеные разделы. -->
     <nav>
         <h1>ARTEM PASICHNYK</h1>
         <ul class="nav-contact">
@@ -20,7 +19,7 @@
             <li><a href="https://github.com/a-pasichnyk"><img src="/images/github.png" alt="github page" class="navicon"></a></li>
             <li><a href="https://www.linkedin.com/in/a-pasichnyk/"><img src="/images/linkedin.png" alt="Linkedin page" class="navicon"></a></li>
         </ul>
-        
+
     </nav>
     <hr>
     <img src="/images/photo.png" alt="Profile photo" class="profilePhoto">
@@ -49,58 +48,58 @@
     <section class="code">
         <h2>CODE EXAMPLES:</h2>
         <p>I designed my first personal project for a real client. This is a simple landing page for foreign language services, which I hosted on GitHub. Link down below:</p>
-        <div class="button-container">          
+        <div class="button-container">
         <a class="btn-link" href="https://a-pasichnyk.github.io/speakeng/"><span class="speakeng">&lt;ENGLISH FOR IT&gt;</span></a>
         </div>
         <br>
         <p>Here are some code examples from this website:</p>
         <pre>
-        <code><b>JavaScript code:</b> 
-            
+        <code><b>JavaScript code:</b>
+
                 const dropDownComments = document.querySelector(".emptyCommentArea");
                 const dropBtn = document.getElementById("feedback-btn");
-                
-                
+
+
                 function dropDown() {
                     dropDownComments.classList.toggle("filledCommentArea");
-                
+
                     const hdnBtn = '<span class="redText">&lt;</span>Приховати<span class="redText">&gt;</span>';
                     const showBtn = '<span class="redText">&lt;</span>Більше відгуків<span class="redText">&gt;</span>';
-                
+
                     if (dropBtn.innerHTML === hdnBtn) {
                         dropBtn.innerHTML = showBtn;
                     } else {
                         dropBtn.innerHTML = hdnBtn;
                     }
                 }
-                
+
                 dropBtn.addEventListener("click", dropDown);
-            
+
         </code>
         </pre>
 
         <pre>
-        <code><b>CSS code:</b> 
-            
+        <code><b>CSS code:</b>
+
                 :root {
                     --bgColor: #262B31;
                     --bgColor2: #212428;
-                    --whiteText: #D5D5D5; 
+                    --whiteText: #D5D5D5;
                     --yellowText: #F9C862; /*#F9C862*/
                     --redText: #E15A61;
                     --gray:#627281; /*#6C757D*/
-                    --darkGray: #6559b4; /*#4f5357*/ 
+                    --darkGray: #6559b4; /*#4f5357*/
                     --marginBetweenSections: 80px;
                     --marginBetweenSectionsMobile: 30px;
                     --dropShadow: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
                 }
-            
+
         </code>
         </pre>
         <hr>
 
     </section>
-    
+
 
     <section class="experience">
         <h2>WORK EXPERIENCE:</h2>
