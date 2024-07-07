@@ -8,30 +8,35 @@
 </head>
 <body>
 
-<header>
+
+    
+<header class="container">
+    <!-- В раздел nav сознательно даю меню с ссылками на контакты, по структуре даная секция мало чем будет отличатся от нормальной навигации на какой либо веб-странице. Как по мне CV слишком компактное, что-бы делать #anchor-ссылки в шапке на соответсвеные разделы. -->
     <nav>
-        <h2>ARTEM PASICHNYK</h2>
-        <ul>
-            <li><a href="https://discord.com/users/1252703929213653233"><img src="/images/discord.png" alt="discrod page" class="navicon" width="20px"></a></li>
-            <li><a href="https://github.com/a-pasichnyk"><img src="/images/github.png" alt="github page" class="navicon" width="20px"></a></li>
-            <li><a href="https://www.linkedin.com/in/a-pasichnyk/"><img src="/images/linkedin.png" alt="Linkedin page" class="navicon" width="20px"></a></li>
+        <h1>ARTEM PASICHNYK</h1>
+        <ul class="nav-contact">
+            <li>Contact me:</li>
+            <li><a href="https://discord.com/users/1252703929213653233"><img src="/images/discord.png" alt="discrod page" class="navicon"></a></li>
+            <li><a href="https://github.com/a-pasichnyk"><img src="/images/github.png" alt="github page" class="navicon"></a></li>
+            <li><a href="https://www.linkedin.com/in/a-pasichnyk/"><img src="/images/linkedin.png" alt="Linkedin page" class="navicon"></a></li>
         </ul>
-        <hr>
+        
     </nav>
-    <img src="/images/photo.png" alt="Profile photo" width="200px">
+    <hr>
+    <img src="/images/photo.png" alt="Profile photo" class="profilePhoto">
 </header>
 
-<main>
+<main class="container">
     <section class="aboutmyself">
-        <h4>ABOUT MYSELF:</h4>
-        <p>I am 27 and currently I am working as an architect at <a href="https://apa.com.pl/o-nas/biuro/">APA Wojciechowski</a> (largest architectural firm in Poland with over 100 employees).</p>
-        <p>My goal is to learn web development and to be able to create web and cross platform applications. I decided to start with front-end development, because for me it’s very important to interract with visual part. Also I want to understand all aspects of development (front-end, back-end as well as design process in Figma).</p>
-        <p>Sense of style, artistic approach and ability to create different concepts in short deadlines are definitely my most valuable assets, which I earned working as an architectural designer.</p>
+        <h2>ABOUT MYSELF:</h2>
+        <p>I am 27 and currently I am working as an architect at <a class="apa" href="https://apa.com.pl/o-nas/biuro/">APA Wojciechowski</a> (largest architectural firm in Poland with over 100 employees).</p>
+        <p>I have decided to switch career paths and I believe that I can apply my architectural skills to web development. My objective is to learn web development and to be proficient in creating web and cross-platform applications. I have chosen to start with front-end development because it is important to me to work on the visual aspects. Additionally, I aim to gain a comprehensive understanding of the entire development process, including front-end and back-end, as well as the design process in Figma.</p>
+        <p>My strong sense of style, artistic approach, and ability to create various concepts within tight deadlines are undoubtedly my most valuable assets, which I have developed through my work as an architectural designer.</p>
         <hr>
     </section>
 
     <section class="skills">
-        <h4>PROGRAMING SKILLS:</h4>
+        <h2>PROGRAMING SKILLS:</h2>
         <ul>
             <li><strong>HTML, CSS, JavaScript</strong> - beginer</li>
             <li><strong>GitHub</strong> - beginer</li>
@@ -42,13 +47,16 @@
     </section>
 
     <section class="code">
-        <h4>CODE EXAMPLES:</h4>
-        <p>I designed my first personal project for real client. This is a simple landing page for foreign language services, which I hosted on GitHub. Link down below:</p>          
-        <a href="https://a-pasichnyk.github.io/speakeng/">ENGLISH FOR IT website</a>
+        <h2>CODE EXAMPLES:</h2>
+        <p>I designed my first personal project for a real client. This is a simple landing page for foreign language services, which I hosted on GitHub. Link down below:</p>
+        <div class="button-container">          
+        <a class="btn-link" href="https://a-pasichnyk.github.io/speakeng/"><span class="speakeng">&lt;ENGLISH FOR IT&gt;</span></a>
+        </div>
         <br>
         <p>Here are some code examples from this website:</p>
-        <blockquote>JavaScript code: 
-            <pre>
+        <pre>
+        <code><b>JavaScript code:</b> 
+            
                 const dropDownComments = document.querySelector(".emptyCommentArea");
                 const dropBtn = document.getElementById("feedback-btn");
                 
@@ -67,11 +75,13 @@
                 }
                 
                 dropBtn.addEventListener("click", dropDown);
-            </pre>
-        </blockquote>
+            
+        </code>
+        </pre>
 
-        <blockquote>CSS code: 
-            <pre>
+        <pre>
+        <code><b>CSS code:</b> 
+            
                 :root {
                     --bgColor: #262B31;
                     --bgColor2: #212428;
@@ -84,24 +94,25 @@
                     --marginBetweenSectionsMobile: 30px;
                     --dropShadow: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
                 }
-            </pre>
-        </blockquote>
+            
+        </code>
+        </pre>
         <hr>
 
     </section>
     
 
     <section class="experience">
-        <h4>WORK EXPERIENCE:</h4>
+        <h2>WORK EXPERIENCE:</h2>
         <ul>
-            <li><strong>Architectural designer at <a href="https://apa.com.pl/o-nas/biuro/">APA Wojciechowski</a></strong> - since 2020</li>
+            <li><strong>Architectural designer at <a class="apa" href="https://apa.com.pl/o-nas/biuro/">APA Wojciechowski</a></strong> - since 2020</li>
             <li><strong>Freelance  3D artist</strong> - 2019-2020</li>
         </ul>
         <hr>
     </section>
 
     <section class="education">
-        <h4>EDUCATION:</h4>
+        <h2>EDUCATION:</h2>
         <ul>
             <li><strong>Gdańsk University of Technology</strong> (Master of Architecture - 2020)</li>
             <li><strong>Chernivtsi National University</strong> (Bachelor of Architecture - 2018)</li>
@@ -110,7 +121,7 @@
     </section>
 
     <section class="languages">
-        <h4>LANGUAGES:</h4>
+        <h2>LANGUAGES:</h2>
         <ul>
             <li><strong>Ukrainian:</strong> native</li>
             <li><strong>Polish:</strong> B2+/C1</li>
@@ -122,9 +133,15 @@
     </section>
 </main>
 
-<footer>
-    
+<footer class="container">
+    <p>Check my GitHub account and RS School course via buttons bellow.</p>
+    <div class="footer-container">
+    <a href="https://github.com/a-pasichnyk"><img src="/images/github.png" alt="github page" class="ftricon"></a>
+    <a href="https://rs.school/courses/javascript-ru"><img src="/images/rs-school-logo.svg" alt="RS school logo" class="ftricon"></a>
+    </div>
+    <h4>2024</h4>
 </footer>
+
 
 
 </body>
