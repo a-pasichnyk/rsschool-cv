@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+<header class="container">
+    <nav>
+        <h1>ARTEM PASICHNYK</h1>
+        <ul class="nav-contact">
+            <li>Contact me:</li>
+            <li><a href="https://discord.com/users/1252703929213653233"><img src="/images/discord.png" alt="discrod page" class="navicon"></a></li>
+            <li><a href="https://github.com/a-pasichnyk"><img src="/images/github.png" alt="github page" class="navicon"></a></li>
+            <li><a href="https://www.linkedin.com/in/a-pasichnyk/"><img src="/images/linkedin.png" alt="Linkedin page" class="navicon"></a></li>
+        </ul>
+
+    </nav>
+    <hr>
+    <img src="/images/photo.png" alt="Profile photo" class="profilePhoto">
+</header>
+
+<main class="container">
+    <section class="aboutmyself">
+        <h2>ABOUT MYSELF:</h2>
+        <p>I am 27 and currently I am working as an architect at <a class="apa" href="https://apa.com.pl/o-nas/biuro/">APA Wojciechowski</a> (largest architectural firm in Poland with over 100 employees).</p>
+        <p>I have decided to switch career paths and I believe that I can apply my architectural skills to web development. My objective is to learn web development and to be proficient in creating web and cross-platform applications. I have chosen to start with front-end development because it is important to me to work on the visual aspects. Additionally, I aim to gain a comprehensive understanding of the entire development process, including front-end and back-end, as well as the design process in Figma.</p>
+        <p>My strong sense of style, artistic approach, and ability to create various concepts within tight deadlines are undoubtedly my most valuable assets, which I have developed through my work as an architectural designer.</p>
+        <hr>
+    </section>
+
+    <section class="skills">
+        <h2>PROGRAMING SKILLS:</h2>
+        <ul>
+            <li><strong>HTML, CSS, JavaScript</strong> - beginer</li>
+            <li><strong>GitHub</strong> - beginer</li>
+            <li><strong>Figma</strong> - beginer</li>
+            <li><strong>Photoshop</strong> - beginer</li>
+        </ul>
+        <hr>
+    </section>
+
+    <section class="code">
+        <h2>CODE EXAMPLES:</h2>
+        <p>I designed my first personal project for a real client. This is a simple landing page for foreign language services, which I hosted on GitHub. Link down below:</p>
+        <div class="button-container">
+        <a class="btn-link" href="https://a-pasichnyk.github.io/speakeng/"><span class="speakeng">&lt;ENGLISH FOR IT&gt;</span></a>
+        </div>
+        <br>
+        <p>Here are some code examples from this website:</p>
+        <pre>
+        <code><b>JavaScript code:</b>
+
+                const dropDownComments = document.querySelector(".emptyCommentArea");
+                const dropBtn = document.getElementById("feedback-btn");
+
+
+                function dropDown() {
+                    dropDownComments.classList.toggle("filledCommentArea");
+
+                    const hdnBtn = '<span class="redText">&lt;</span>Приховати<span class="redText">&gt;</span>';
+                    const showBtn = '<span class="redText">&lt;</span>Більше відгуків<span class="redText">&gt;</span>';
+
+                    if (dropBtn.innerHTML === hdnBtn) {
+                        dropBtn.innerHTML = showBtn;
+                    } else {
+                        dropBtn.innerHTML = hdnBtn;
+                    }
+                }
+
+                dropBtn.addEventListener("click", dropDown);
+
+        </code>
+        </pre>
+
+        <pre>
+        <code><b>CSS code:</b>
+
+                :root {
+                    --bgColor: #262B31;
+                    --bgColor2: #212428;
+                    --whiteText: #D5D5D5;
+                    --yellowText: #F9C862; /*#F9C862*/
+                    --redText: #E15A61;
+                    --gray:#627281; /*#6C757D*/
+                    --darkGray: #6559b4; /*#4f5357*/
+                    --marginBetweenSections: 80px;
+                    --marginBetweenSectionsMobile: 30px;
+                    --dropShadow: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+                }
+
+        </code>
+        </pre>
+        <hr>
+
+    </section>
+
+
+    <section class="experience">
+        <h2>WORK EXPERIENCE:</h2>
+        <ul>
+            <li><strong>Architectural designer at <a class="apa" href="https://apa.com.pl/o-nas/biuro/">APA Wojciechowski</a></strong> - since 2020</li>
+            <li><strong>Freelance  3D artist</strong> - 2019-2020</li>
+        </ul>
+        <hr>
+    </section>
+
+    <section class="education">
+        <h2>EDUCATION:</h2>
+        <ul>
+            <li><strong>Gdańsk University of Technology</strong> (Master of Architecture - 2020)</li>
+            <li><strong>Chernivtsi National University</strong> (Bachelor of Architecture - 2018)</li>
+        </ul>
+        <hr>
+    </section>
+
+    <section class="languages">
+        <h2>LANGUAGES:</h2>
+        <ul>
+            <li><strong>Ukrainian:</strong> native</li>
+            <li><strong>Polish:</strong> B2+/C1</li>
+            <li><strong>English:</strong> B1+</li>
+            <li><strong>Russian:</strong> C1</li>
+        </ul>
+        <hr>
+
+    </section>
+</main>
+
+<footer class="container">
+    <p>Check my GitHub account and RS School course via buttons bellow.</p>
+    <div class="footer-container">
+    <a href="https://github.com/a-pasichnyk"><img src="/images/github.png" alt="github page" class="ftricon"></a>
+    <a href="https://rs.school/courses/javascript-ru"><img src="/images/rs-school-logo.svg" alt="RS school logo" class="ftricon"></a>
+    </div>
+    <h4>2024</h4>
+</footer>
+
+
+
+</body>
+</html>
